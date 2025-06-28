@@ -1,7 +1,5 @@
 package com.pokemon.modelos.pokemon;
 
-import java.io.Serializable;
-
-public enum TipoPokemon implements Serializable {
+public enum TipoPokemon {
     AGUA, FUEGO, PLANTA, ELECTRICO, NORMAL;
 }

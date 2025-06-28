@@ -1,8 +1,6 @@
 package com.pokemon.modelos.objetos;
 
-import java.io.Serializable;
-
-public enum TipoPokeball implements Serializable {
+public enum TipoPokeball {
     POKEBALL(1.0),
     SUPERBALL(1.5),
     ULTRABALL(2.0),

@@ -1,11 +1,9 @@
 package com.pokemon.estructuras;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArbolAVL<T extends Comparable<T>> implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class ArbolAVL<T extends Comparable<T>> {
     private Nodo<T> raiz;
 
     private int altura(Nodo<T> nodo) {

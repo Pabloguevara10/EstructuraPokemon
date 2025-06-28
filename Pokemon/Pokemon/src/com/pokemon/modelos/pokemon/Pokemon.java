@@ -1,9 +1,6 @@
 package com.pokemon.modelos.pokemon;
 
-import java.io.Serializable;
-
-public class Pokemon implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class Pokemon {
 
     private final String nombre;
     private final TipoPokemon tipo;

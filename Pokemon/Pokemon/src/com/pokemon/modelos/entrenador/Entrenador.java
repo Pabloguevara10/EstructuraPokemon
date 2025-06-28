@@ -2,14 +2,12 @@ package com.pokemon.modelos.entrenador;
 
 import com.pokemon.modelos.objetos.TipoPokeball;
 import com.pokemon.modelos.pokemon.Pokemon;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Entrenador implements Comparable<Entrenador>, Serializable {
-    private static final long serialVersionUID = 1L;
+public class Entrenador implements Comparable<Entrenador> {
 
     private final int id;
     private final String nombre;

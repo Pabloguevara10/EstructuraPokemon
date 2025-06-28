@@ -1,11 +1,11 @@
 package com.pokemon.sistema;
 
+import com.pokemon.estructuras.ArbolAVL;
+import com.pokemon.estructuras.ArbolBinarioBusqueda;
 import com.pokemon.modelos.entrenador.Entrenador;
 import com.pokemon.modelos.entrenador.RankingEntrenador;
 import com.pokemon.modelos.pokemon.Pokemon;
 import com.pokemon.modelos.pokemon.TipoPokemon;
-import com.pokemon.estructuras.ArbolBinarioBusqueda;
-import com.pokemon.estructuras.ArbolAVL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -16,34 +16,26 @@ public class Juego {
     private ArbolAVL<RankingEntrenador> rankingLiga;
     private final SistemaBatalla sistemaBatalla;
     private final SistemaTienda sistemaTienda;
-    private final SistemaDeGuardado sistemaDeGuardado;
     private final List<Pokemon> pokemonSalvajesDisponibles;
     private int proximoIdEntrenador = 1;
     private final Scanner scanner;
 
-    @SuppressWarnings("unchecked")
     public Juego(Scanner scanner) {
         this.scanner = scanner;
         this.sistemaBatalla = new SistemaBatalla();
         this.sistemaTienda = new SistemaTienda();
-        this.sistemaDeGuardado = new SistemaDeGuardado();
         this.pokemonSalvajesDisponibles = new ArrayList<>();
         
-        Object[] datosCargados = sistemaDeGuardado.cargarDatos();
-        if (datosCargados != null) {
-            this.registroHistorico = (ArbolBinarioBusqueda<Entrenador>) datosCargados[0];
-            this.rankingLiga = (ArbolAVL<RankingEntrenador>) datosCargados[1];
-            this.proximoIdEntrenador = (int) datosCargados[2];
-        } else {
-            this.registroHistorico = new ArbolBinarioBusqueda<>();
-            this.rankingLiga = new ArbolAVL<>();
-        }
+        // Se inicializan las estructuras de datos directamente, sin cargar desde archivo
+        this.registroHistorico = new ArbolBinarioBusqueda<>();
+        this.rankingLiga = new ArbolAVL<>();
         
         inicializarPokemonSalvajes();
     }
     
+    // El método para guardar ya no hace nada
     public void guardarJuego() {
-        sistemaDeGuardado.guardarDatos(registroHistorico, rankingLiga, proximoIdEntrenador);
+        // La funcionalidad de guardado ha sido removida
     }
 
     private void inicializarPokemonSalvajes() {
@@ -147,7 +139,6 @@ public class Juego {
         
         if (jugador.getPrimerPokemonVivo() == null) {
             System.out.println("¡Todos tus Pokémon están debilitados! Corre al centro Pokémon (saliendo de la aventura).");
-            // En un juego completo, aquí se forzaría la salida o ir a un centro.
             return;
         }
 

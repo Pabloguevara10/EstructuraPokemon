@@ -1,9 +1,6 @@
 package com.pokemon.modelos.entrenador;
 
-import java.io.Serializable;
-
-public class RankingEntrenador implements Comparable<RankingEntrenador>, Serializable {
-    private static final long serialVersionUID = 1L;
+public class RankingEntrenador implements Comparable<RankingEntrenador> {
 
     private final int idEntrenador;
     private final String nombreEntrenador;

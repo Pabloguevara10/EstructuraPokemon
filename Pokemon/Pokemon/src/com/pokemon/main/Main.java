@@ -25,7 +25,7 @@ public class Main {
                     menuCentroBatalla(juego, scanner);
                     break;
                 case "3":
-                    juego.guardarJuego();
+                    // juego.guardarJuego(); // Línea eliminada
                     salir = true;
                     System.out.println("¡Gracias por jugar!");
                     break;

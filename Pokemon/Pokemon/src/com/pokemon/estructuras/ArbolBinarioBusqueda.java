@@ -1,11 +1,9 @@
 package com.pokemon.estructuras;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArbolBinarioBusqueda<T extends Comparable<T>> implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class ArbolBinarioBusqueda<T extends Comparable<T>> {
     private Nodo<T> raiz;
 
     public void insertar(T dato) {
