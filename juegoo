@@ -1,0 +1,56 @@
+private void inicializarPokemonSalvajes() {
+        // Limpia la lista existente antes de añadir los nuevos
+        pokemonSalvajesDisponibles.clear();
+
+        // Nivel 2-5 (Comunes)
+        pokemonSalvajesDisponibles.add(new Pokemon("Rattata", TipoPokemon.NORMAL, 35, 6, 4, 2));
+        pokemonSalvajesDisponibles.add(new Pokemon("Pidgey", TipoPokemon.NORMAL, 40, 5, 5, 3));
+        pokemonSalvajesDisponibles.add(new Pokemon("Caterpie", TipoPokemon.BICHO, 45, 4, 4, 2));
+        pokemonSalvajesDisponibles.add(new Pokemon("Weedle", TipoPokemon.BICHO, 40, 5, 4, 2));
+        pokemonSalvajesDisponibles.add(new Pokemon("Zubat", TipoPokemon.VENENO, 45, 5, 4, 4));
+        pokemonSalvajesDisponibles.add(new Pokemon("Magikarp", TipoPokemon.AGUA, 30, 2, 6, 5));
+        
+        // Nivel 6-9 (Poco Comunes)
+        pokemonSalvajesDisponibles.add(new Pokemon("Spearow", TipoPokemon.NORMAL, 42, 7, 4, 6));
+        pokemonSalvajesDisponibles.add(new Pokemon("Ekans", TipoPokemon.VENENO, 40, 6, 5, 7));
+        pokemonSalvajesDisponibles.add(new Pokemon("Sandshrew", TipoPokemon.TIERRA, 50, 8, 9, 7));
+        pokemonSalvajesDisponibles.add(new Pokemon("Jigglypuff", TipoPokemon.NORMAL, 80, 4, 3, 6));
+        pokemonSalvajesDisponibles.add(new Pokemon("Oddish", TipoPokemon.PLANTA, 50, 6, 6, 8));
+        pokemonSalvajesDisponibles.add(new Pokemon("Paras", TipoPokemon.BICHO, 45, 7, 6, 6));
+        pokemonSalvajesDisponibles.add(new Pokemon("Venonat", TipoPokemon.BICHO, 60, 6, 5, 8));
+        pokemonSalvajesDisponibles.add(new Pokemon("Meowth", TipoPokemon.NORMAL, 45, 6, 4, 8));
+        pokemonSalvajesDisponibles.add(new Pokemon("Psyduck", TipoPokemon.AGUA, 55, 6, 5, 9));
+        pokemonSalvajesDisponibles.add(new Pokemon("Mankey", TipoPokemon.LUCHA, 45, 9, 4, 8));
+        pokemonSalvajesDisponibles.add(new Pokemon("Poliwag", TipoPokemon.AGUA, 45, 5, 5, 6));
+        pokemonSalvajesDisponibles.add(new Pokemon("Abra", TipoPokemon.PSIQUICO, 30, 3, 3, 7));
+        pokemonSalvajesDisponibles.add(new Pokemon("Bellsprout", TipoPokemon.PLANTA, 55, 8, 4, 8));
+        pokemonSalvajesDisponibles.add(new Pokemon("Tentacool", TipoPokemon.AGUA, 45, 5, 8, 7));
+        pokemonSalvajesDisponibles.add(new Pokemon("Geodude", TipoPokemon.ROCA, 50, 8, 10, 8));
+        pokemonSalvajesDisponibles.add(new Pokemon("Magnemite", TipoPokemon.ELECTRICO, 35, 5, 8, 9));
+        pokemonSalvajesDisponibles.add(new Pokemon("Shellder", TipoPokemon.AGUA, 40, 7, 11, 8));
+        pokemonSalvajesDisponibles.add(new Pokemon("Gastly", TipoPokemon.FANTASMA, 35, 5, 4, 9));
+        pokemonSalvajesDisponibles.add(new Pokemon("Krabby", TipoPokemon.AGUA, 40, 10, 9, 9));
+        pokemonSalvajesDisponibles.add(new Pokemon("Voltorb", TipoPokemon.ELECTRICO, 45, 4, 6, 8));
+        pokemonSalvajesDisponibles.add(new Pokemon("Horsea", TipoPokemon.AGUA, 40, 5, 7, 7));
+        pokemonSalvajesDisponibles.add(new Pokemon("Goldeen", TipoPokemon.AGUA, 50, 7, 6, 8));
+        
+        // Nivel 10-15 (Raros)
+        pokemonSalvajesDisponibles.add(new Pokemon("Nidoran♀", TipoPokemon.VENENO, 55, 5, 6, 10));
+        pokemonSalvajesDisponibles.add(new Pokemon("Nidoran♂", TipoPokemon.VENENO, 50, 7, 5, 10));
+        pokemonSalvajesDisponibles.add(new Pokemon("Vulpix", TipoPokemon.FUEGO, 45, 6, 5, 11));
+        pokemonSalvajesDisponibles.add(new Pokemon("Diglett", TipoPokemon.TIERRA, 30, 7, 4, 12));
+        pokemonSalvajesDisponibles.add(new Pokemon("Growlithe", TipoPokemon.FUEGO, 60, 8, 5, 12));
+        pokemonSalvajesDisponibles.add(new Pokemon("Machop", TipoPokemon.LUCHA, 65, 9, 5, 11));
+        pokemonSalvajesDisponibles.add(new Pokemon("Ponyta", TipoPokemon.FUEGO, 55, 9, 6, 13));
+        pokemonSalvajesDisponibles.add(new Pokemon("Slowpoke", TipoPokemon.AGUA, 85, 7, 7, 12));
+        pokemonSalvajesDisponibles.add(new Pokemon("Doduo", TipoPokemon.NORMAL, 40, 9, 5, 11));
+        pokemonSalvajesDisponibles.add(new Pokemon("Seel", TipoPokemon.AGUA, 65, 5, 6, 10));
+        pokemonSalvajesDisponibles.add(new Pokemon("Grimer", TipoPokemon.VENENO, 75, 8, 5, 11));
+        pokemonSalvajesDisponibles.add(new Pokemon("Onix", TipoPokemon.ROCA, 55, 6, 15, 14));
+        pokemonSalvajesDisponibles.add(new Pokemon("Drowzee", TipoPokemon.PSIQUICO, 65, 6, 5, 12));
+        pokemonSalvajesDisponibles.add(new Pokemon("Cubone", TipoPokemon.TIERRA, 55, 6, 9, 13));
+        pokemonSalvajesDisponibles.add(new Pokemon("Koffing", TipoPokemon.VENENO, 50, 7, 9, 12));
+        pokemonSalvajesDisponibles.add(new Pokemon("Rhyhorn", TipoPokemon.ROCA, 80, 9, 10, 14));
+        pokemonSalvajesDisponibles.add(new Pokemon("Staryu", TipoPokemon.AGUA, 40, 6, 6, 11));
+        pokemonSalvajesDisponibles.add(new Pokemon("Eevee", TipoPokemon.NORMAL, 60, 6, 5, 10));
+    }
